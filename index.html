@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/5b93cd4eb1.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="m-2">
     <header class="container mx-auto">
         <div class="navbar bg-base-100 mb-6">
             <div class="navbar-start">
@@ -40,7 +40,8 @@
                                 class="text-[#1DD100]">P
                                 Paribahan</span></h2>
                         <p class="mb-5 text-white">Paribahan service on verge of closure too</p>
-                        <button class="btn btn-primary bg-[#1DD100] px-8">Get Started</button>
+                        <button onclick="toShowBuyTicket()" class="btn btn-primary bg-[#1DD100] px-8">Buy
+                            Tickets</button>
                     </div>
                 </div>
             </div>
@@ -52,16 +53,16 @@
                 <h1 class="text-5xl text-black">Best offers for you</h1>
             </div>
             <!-- cupoone card section  -->
-            <div class="mb-14 flex justify-around">
+            <div class="mb-14 flex flex-col lg:flex-row justify-around">
                 <div
-                    class="flex items-center px-4 justify-between w-[450px] bg-[#FFBF0F] text-primary-content rounded-xl">
+                    class="flex flex-col lg:flex-row items-center px-4 justify-between lg:w-[450px] bg-[#FFBF0F] text-primary-content rounded-xl mb-4 lg:mb-0">
                     <div class="text-black">
                         <h2 class="card-title text-3xl">15% OFF</h2>
                         <p class="text-2xl">on your next purchas</p>
                         <p class="text-xl">use by January 2024</p>
                     </div>
                     <div>
-                        <img src="images/cupon-devider.png" alt="">
+                        <img class="hidden lg:block" src="images/cupon-devider.png" alt="">
                     </div>
                     <div>
                         <h1 class="text-4xl text-black"><span>NEW<span>15</span></span></h1>
@@ -70,14 +71,14 @@
                 </div>
 
                 <div
-                    class="flex items-center px-4 justify-between w-[450px] bg-[#F78C9C] text-primary-content rounded-xl">
+                    class="flex flex-col lg:flex-row items-center px-4 justify-between lg:w-[450px] bg-[#F78C9C] text-primary-content rounded-xl">
                     <div class="text-black">
                         <h2 class="card-title text-3xl">20% OFF</h2>
                         <p class="text-2xl">on your next purchas</p>
                         <p class="text-xl">use by January 2024</p>
                     </div>
                     <div>
-                        <img src="images/cupon-devider.png" alt="">
+                        <img class="hidden lg:block" src="images/cupon-devider.png" alt="">
                     </div>
                     <div>
                         <h1 class="text-4xl text-black"><span>NEW<span>20</span></span></h1>
@@ -89,7 +90,62 @@
                 <button class="btn btn-outline btn-success px-8">Success</button>
             </div>
         </section>
+
+        <!-- p paribahan section  -->
+        <section id="p-paribahan" class="my-24 hidden">
+            <div class="text-center">
+                <h1 class="text-5xl font-extrabold mb-4 text-black">P.H Paribahan</h1>
+                <p>Yes, you can run unit tests and view the results directly within the app. The integrated
+                    testing features allow for a streamlined .</p>
+            </div>
+            <div class="bg-slate-100 p-10 mt-10">
+                <div>
+                    <div class="mt-16 flex flex-col lg:flex-row items-center gap-10 justify-around">
+                        <div class="flex gap-4">
+                            <img src="images/bus-logo.png" alt="">
+                            <div>
+                                <h1 class="text-2xl text-black">Greenline Paribahan</h1>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn text-xl text-[#1DD100] p-4"><i
+                                    class="fa-solid fa-couch"></i><span>40</span>
+                                Seats
+                                left</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row justify-around items-center bg-gray-200 px-4 mt-8">
+                        <div class="  divide-y divide-dashed divide-black space-y-4">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-xl">Route</h2>
+                                <h2 class="text-xl">Dhaka - Sylhet</h2>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-xl">Departure Time</h2>
+                                <h2 class="text-xl">9:00 PM</h2>
+                            </div>
+                            <div class="flex  flex-col lg:flex-row justify-between my-4 gap-4">
+                                <button class="btn px-4">Boarding Point - Laxmipu</button>
+                                <button class="btn px-4">Dropping Point - Bogura</button>
+                                <button class="btn px-4">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                        <img class="hidden lg:block" src="images/info-devider.png" alt="">
+                        <div class="flex flex-col justify-center">
+                            <img class="text-center" src="images/fare.png" alt="">
+                            <h1 class="text-3xl text-black"><span>550</span> taka</h1>
+                            <h class="text-2xl">Per Seat</h>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+
+    <!-- script link section  -->
+    <script src="script/index.js"></script>
 </body>
 
 </html>
