@@ -91,73 +91,76 @@
             </div>
         </section>
 
-        <!-- p paribahan section  -->
-        <section id="p-paribahan" class="my-24 hidden">
-            <div class="text-center">
-                <h1 class="text-5xl font-extrabold mb-4 text-black">P.H Paribahan</h1>
-                <p>Yes, you can run unit tests and view the results directly within the app. The integrated
-                    testing features allow for a streamlined .</p>
-            </div>
-            <div class="bg-slate-100 p-10 mt-10">
-                <div>
-                    <div class="mt-16 flex flex-col lg:flex-row items-center gap-10 justify-around">
-                        <div class="flex gap-4">
-                            <img src="images/bus-logo.png" alt="">
+        <!-- p paribahan section hidden -->
+        <section id="p-paribahan" class="my-24 ">
+            <div>
+                <div class="text-center">
+                    <h1 class="text-5xl font-extrabold mb-4 text-black">P.H Paribahan</h1>
+                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated
+                        testing features allow for a streamlined .</p>
+                </div>
+                <div class="bg-slate-100 p-10 mt-10">
+                    <div>
+                        <div class="mt-16 flex flex-col lg:flex-row items-center gap-10 justify-around">
+                            <div class="flex gap-4">
+                                <img src="images/bus-logo.png" alt="">
+                                <div>
+                                    <h1 class="text-2xl text-black">Greenline Paribahan</h1>
+                                    <p>Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
                             <div>
-                                <h1 class="text-2xl text-black">Greenline Paribahan</h1>
-                                <p>Coach-009-WEB ! AC_Business</p>
+                                <button class="btn text-xl text-[#1DD100] p-4"><i
+                                        class="fa-solid fa-couch"></i><span>40</span>
+                                    Seats
+                                    left</button>
                             </div>
                         </div>
-                        <div>
-                            <button class="btn text-xl text-[#1DD100] p-4"><i
-                                    class="fa-solid fa-couch"></i><span>40</span>
-                                Seats
-                                left</button>
-                        </div>
-                    </div>
-                    <div class="flex flex-col lg:flex-row justify-around items-center bg-gray-200 px-4 mt-8">
-                        <div class="  divide-y divide-dashed divide-black space-y-4">
-                            <div class="flex justify-between items-center">
-                                <h2 class="text-xl">Route</h2>
-                                <h2 class="text-xl">Dhaka - Sylhet</h2>
+                        <div
+                            class="flex flex-col lg:flex-row justify-around items-center bg-gray-200 px-4 mt-8 rounded-xl">
+                            <div class="  divide-y divide-dashed divide-black space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <h2 class="text-xl">Route</h2>
+                                    <h2 class="text-xl">Dhaka - Sylhet</h2>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <h2 class="text-xl">Departure Time</h2>
+                                    <h2 class="text-xl">9:00 PM</h2>
+                                </div>
+                                <div class="flex  flex-col lg:flex-row justify-between my-4 gap-4">
+                                    <button class="btn px-4">Boarding Point - Laxmipu</button>
+                                    <button class="btn px-4">Dropping Point - Bogura</button>
+                                    <button class="btn px-4">Est. Time - 11 Hour</button>
+                                </div>
                             </div>
-                            <div class="flex justify-between items-center">
-                                <h2 class="text-xl">Departure Time</h2>
-                                <h2 class="text-xl">9:00 PM</h2>
+                            <img class="hidden lg:block" src="images/info-devider.png" alt="">
+                            <div class="flex flex-col justify-center">
+                                <img class="text-center" src="images/fare.png" alt="">
+                                <h1 class="text-3xl text-black"><span>550</span> taka</h1>
+                                <h class="text-2xl">Per Seat</h>
                             </div>
-                            <div class="flex  flex-col lg:flex-row justify-between my-4 gap-4">
-                                <button class="btn px-4">Boarding Point - Laxmipu</button>
-                                <button class="btn px-4">Dropping Point - Bogura</button>
-                                <button class="btn px-4">Est. Time - 11 Hour</button>
-                            </div>
-                        </div>
-                        <img class="hidden lg:block" src="images/info-devider.png" alt="">
-                        <div class="flex flex-col justify-center">
-                            <img class="text-center" src="images/fare.png" alt="">
-                            <h1 class="text-3xl text-black"><span>550</span> taka</h1>
-                            <h class="text-2xl">Per Seat</h>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- interface section  -->
-            <section class="my-16">
+            <section class="flex flex-col lg:flex-row lg:justify-around items-center my-16">
                 <div>
-                    <div class="space-y-4  divide-black divide-dashed">
-                        <h2 class="text-3xl font-bold text-black">Select Your Seat</h2>
-                        <div class="flex justify-between">
+                    <div class="space-y-4  divide-black lg:divide-dashed text-center">
+                        <h2 class="text-3xl text-black">Select Your Seat</h2>
+                        <div class="flex flex-col lg:flex-row justify-between">
                             <h2 class="flex gap-4 items-center"><i class="fa-solid fa-couch"></i> Available</h2>
                             <h2 class="flex gap-4 items-center text-xl text-[#1DD100]"><i
                                     class="fa-solid fa-couch"></i>Selected</h2>
                         </div>
-                        <hr>
+                        <hr class="hidden lg:block">
                         <div class="mt-10">
-                            <div class="flex justify-end">
+                            <div class="flex lg:justify-end">
                                 <button class="btn px-16"><i class="fa-solid fa-bus"></i></button>
                             </div>
-                            <div class="flex justify-between mt-8">
-                                <div class="flex items-center gap-10">
+                            <div class="flex flex-col lg:flex-row gap-16 justify-between mt-8">
+                                <div class="flex items-center gap-10 mb-4 lg:mb-0">
                                     <button class="btn px-10">A1</button>
                                     <button class="btn px-10">A2</button>
                                 </div>
@@ -167,7 +170,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex justify-between mt-8">
+                            <div class="flex flex-col lg:flex-row gap-16 justify-between mt-8">
                                 <div class="flex items-center gap-10">
                                     <button class="btn px-10">B1</button>
                                     <button class="btn px-10">B2</button>
@@ -181,8 +184,53 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="mt-10  divide-dashed divide-black">
+                    <div class="mb-4">
+                        <h1 class="text-3xl text-black">Select Your Seat</h1>
+                    </div>
 
+                    <hr>
+                    <div class="divide-black divide-dashed my-4 bg-gray-200 p-2 lg:p-10 rounded-lg">
+                        <div class="flex justify-between mb-2 gap-24">
+                            <h2 class="text-xl text-black">Seat<span
+                                    class="bg-[#1DD100] text-white rounded-md p-1">2</span>
+                            </h2>
+                            <h2 class="text-xl text-black">Class</h2>
+                            <h2 class="text-xl text-black">Price</h2>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between gap-24 my-4">
+                            <p>C2</p>
+                            <p>Economoy</p>
+                            <p>550</p>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between gap-24">
+                            <p class="text-xl text-black">Total Price</p>
+                            <p class="text-xl text-black">BDT <span>1100</span></p>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <input class="bg-white py-4 lg:px-8 rounded-lg" type="text">
+                            <button class="btn -ml-24 px-6 bg-[#1DD100] text-white rounded-lg">Apply</button>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <h2 class="text-xl text-black">Grand Total</h2>
+                            <h2 class="text-xl text-black">BDT <span>1100</span></h2>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary  bg-[#1DD100] border-none lg:px-44">Next</button>
+                    </div>
+                    <div class="flex justify-between mt-6 ">
+                        <div class="divide-black">
+                            <p>Terms and Conditions</p>
+                            <hr>
+                        </div>
+                        <div class="divide-black">
+                            <p>Cancellation Policy</p>
+                            <hr>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
