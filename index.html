@@ -110,8 +110,8 @@
                                 </div>
                             </div>
                             <div>
-                                <button class="btn text-xl text-[#1DD100] p-4"><i
-                                        class="fa-solid fa-couch"></i><span>40</span>
+                                <button class="btn text-xl text-[#1DD100] p-4"><i class="fa-solid fa-couch"></i><span
+                                        id="remider-sit">8</span>
                                     Seats
                                     left</button>
                             </div>
@@ -173,12 +173,12 @@
 
                             <div class="flex flex-col lg:flex-row gap-16 justify-between mt-8">
                                 <div class="flex items-center gap-10">
-                                    <button class="btn px-10">B1</button>
-                                    <button class="btn px-10">B2</button>
+                                    <button onclick="selectSitFive()" id="sit-five" class="btn px-10">B1</button>
+                                    <button onclick="selectSitSix()" id="sit-six" class="btn px-10">B2</button>
                                 </div>
                                 <div class="flex items-center gap-10">
-                                    <button class="btn px-10">B3</button>
-                                    <button class="btn px-10">B4</button>
+                                    <button onclick="selectSitSeven()" id="sit-seven" class="btn px-10">B3</button>
+                                    <button onclick="selectSitEight()" id="sit-eight" class="btn px-10">B4</button>
                                 </div>
                             </div>
                         </div>
@@ -193,8 +193,8 @@
                     <hr>
                     <div class="divide-black divide-dashed my-4 bg-gray-200 p-2 lg:p-10 rounded-lg">
                         <div class="flex justify-between mb-2 gap-24">
-                            <h2 class="text-xl text-black">Seat<span
-                                    class="bg-[#1DD100] text-white rounded-md p-1">2</span>
+                            <h2 class="text-xl text-black">Seat<span id="select-sit-num"
+                                    class="bg-[#1DD100] text-white rounded-md p-1">0</span>
                             </h2>
                             <h2 class="text-xl text-black">Class</h2>
                             <h2 class="text-xl text-black">Price</h2>
@@ -211,7 +211,7 @@
                             <p class="text-xl text-black">BDT <span>1100</span></p>
                         </div>
                         <div class="mt-4 flex items-center">
-                            <input class="bg-white py-4 lg:px-8 rounded-lg" type="text">
+                            <input class="bg-white py-4 lg:px-8 rounded-lg" type="text" placeholder="Have any cupon">
                             <button class="btn -ml-24 px-6 bg-[#1DD100] text-white rounded-lg">Apply</button>
                         </div>
                         <div class="flex justify-between items-center mt-4">
