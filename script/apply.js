@@ -1,3 +1,13 @@
+document.getElementById('cupon-code').addEventListener('keyup', function (event) {
+	const text = event.target.value;
+	const applyButton = document.getElementById('myButton');
+	if (text === 'NEW15' || text === 'NEW20') {
+		applyButton.removeAttribute('disabled');
+	} else {
+		applyButton.setAttribute('disabled', true);
+	}
+});
+
 function toGetCuponDiscount() {
 	// const grandTotalPrice = document.getElementById('grand-price');
 
