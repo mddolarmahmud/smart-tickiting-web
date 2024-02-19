@@ -87,12 +87,12 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-                <button class="btn btn-outline btn-success px-8">Success</button>
+                <button class="btn btn-outline btn-success px-8">See All Offers</button>
             </div>
         </section>
 
-        <!-- p paribahan section hidden -->
-        <section id="p-paribahan" class="my-24 ">
+        <!-- p paribahan section  -->
+        <section id="p-paribahan" class="my-24 hidden">
             <div>
                 <div class="text-center">
                     <h1 class="text-5xl font-extrabold mb-4 text-black">P.H Paribahan</h1>
@@ -161,12 +161,13 @@
                             </div>
                             <div class="flex flex-col lg:flex-row gap-16 justify-between mt-8">
                                 <div class="flex items-center gap-10 mb-4 lg:mb-0">
-                                    <button class="btn px-10">A1</button>
-                                    <button class="btn px-10">A2</button>
+                                    <button onclick="toSiteNoOneSelect()" id="toChange-color"
+                                        class="btn px-10">A1</button>
+                                    <button onclick="buttonTwo()" id="secound" class="btn px-10">A2</button>
                                 </div>
                                 <div class="flex items-center gap-10">
-                                    <button class="btn px-10">A3</button>
-                                    <button class="btn px-10">A4</button>
+                                    <button onclick="toSelectThree()" id="third" class="btn px-10 ">A3</button>
+                                    <button onclick="toSelectFour() " id="four" class="btn px-10">A4</button>
                                 </div>
                             </div>
 
