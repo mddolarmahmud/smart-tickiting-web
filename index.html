@@ -65,7 +65,7 @@
                         <img class="hidden lg:block" src="images/cupon-devider.png" alt="">
                     </div>
                     <div>
-                        <h1 class="text-4xl text-black"><span>NEW<span>15</span></span></h1>
+                        <h1 class="text-4xl text-black"><span id="fifty-discount">NEW15</span></h1>
                         <p class="text-xl text-gray-500">Coupon Code</p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                         <img class="hidden lg:block" src="images/cupon-devider.png" alt="">
                     </div>
                     <div>
-                        <h1 class="text-4xl text-black"><span>NEW<span>20</span></span></h1>
+                        <h1 class="text-4xl text-black"><span id="copple-discount">NEW20</span></h1>
                         <p class="text-xl text-gray-500">Coupon Code</p>
                     </div>
                 </div>
@@ -200,19 +200,19 @@
                             <h2 class="text-xl text-black">Price</h2>
                         </div>
                         <hr>
-                        <div class="flex justify-between gap-24 my-4">
-                            <p>C2</p>
-                            <p>Economoy</p>
-                            <p>550</p>
+                        <div id="show-ticket" class=" my-4">
+
                         </div>
                         <hr>
                         <div class="flex justify-between gap-24">
                             <p class="text-xl text-black">Total Price</p>
-                            <p class="text-xl text-black">BDT <span>1100</span></p>
+                            <p class="text-xl text-black">BDT <span id="total-price">1100</span></p>
                         </div>
                         <div class="mt-4 flex items-center">
-                            <input class="bg-white py-4 lg:px-8 rounded-lg" type="text" placeholder="Have any cupon">
-                            <button class="btn -ml-24 px-6 bg-[#1DD100] text-white rounded-lg">Apply</button>
+                            <input id="cupon-code" class="bg-white py-4 lg:px-8 rounded-lg" type="text"
+                                placeholder="Have any cupon">
+                            <button onclick="toGetCuponDiscount()"
+                                class="btn -ml-24 px-6 bg-[#1DD100] text-white rounded-lg">Apply</button>
                         </div>
                         <div class="flex justify-between items-center mt-4">
                             <h2 class="text-xl text-black">Grand Total</h2>
@@ -242,6 +242,7 @@
 
     <!-- script link section  -->
     <script src="script/index.js"></script>
+    <script src="script/apply.js"></script>
 </body>
 
 </html>
