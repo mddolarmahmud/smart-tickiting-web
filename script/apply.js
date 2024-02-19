@@ -1,4 +1,6 @@
 function toGetCuponDiscount() {
+	// const grandTotalPrice = document.getElementById('grand-price');
+
 	const cuponNumber = document.getElementById('cupon-code');
 	const code = cuponNumber.value;
 
@@ -9,10 +11,14 @@ function toGetCuponDiscount() {
 	const coppleDiscount = getCoppleDiscount.innerText;
 
 	if (code === discount15) {
-		alert('hello');
+		const grandTotalPrice = document.getElementById('grand-price');
+		const price = 2200 - (2200 * 15) / 100;
+		grandTotalPrice.innerText = price;
 	} else if (code === coppleDiscount) {
-		alert('right');
+		const grandTotalPrice = document.getElementById('grand-price');
+		const price = 2200 - (2200 * 20) / 100;
+		grandTotalPrice.innerText = price;
 	} else {
-		alert('wrong');
+		alert('Invalid code');
 	}
 }

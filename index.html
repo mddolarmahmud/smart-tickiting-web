@@ -211,17 +211,43 @@
                         <div class="mt-4 flex items-center">
                             <input id="cupon-code" class="bg-white py-4 lg:px-8 rounded-lg" type="text"
                                 placeholder="Have any cupon">
-                            <button onclick="toGetCuponDiscount()"
+                            <button id="myButton" onclick="toGetCuponDiscount()"
                                 class="btn -ml-24 px-6 bg-[#1DD100] text-white rounded-lg">Apply</button>
                         </div>
                         <div class="flex justify-between items-center mt-4">
                             <h2 class="text-xl text-black">Grand Total</h2>
-                            <h2 class="text-xl text-black">BDT <span>1100</span></h2>
+                            <h2 class="text-xl text-black">BDT <span id="grand-price">1100</span></h2>
                         </div>
                     </div>
+
+
+                    <!-- Open the modal using ID.showModal() method -->
                     <div class="text-center">
-                        <button class="btn btn-primary  bg-[#1DD100] border-none lg:px-44">Next</button>
+                        <button onclick="my_modal_1.showModal()"
+                            class="btn btn-primary  bg-[#1DD100] border-none px-10 lg:px-44">Next</button>
                     </div>
+
+                    <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box text-center">
+                            <div class="flex justify-center my-4">
+                                <img src="images/success.png" alt="">
+                            </div>
+                            <h3 class="font-bold text-lg text-black">
+                                SUCCESS</h3>
+                            <p class="py-4">Transportation experts say the city's traffic system needs to be restored to
+                                regain public confidence in public transporte</p>
+
+                            <button class="btn btn-primary bg-[#1DD100]">Continue</button>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+
+
                     <div class="flex justify-between mt-6 ">
                         <div class="divide-black">
                             <p>Terms and Conditions</p>

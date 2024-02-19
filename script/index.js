@@ -1,5 +1,20 @@
 var totalSit = 0;
 
+// if (totalSit === 4) {
+// 	document.getElementById('myButton').disabled = false;
+// } else {
+// 	document.getElementById('myButton').disabled = true;
+// }
+
+// const selectSitNumbers = document.getElementById('select-sit-num');
+// const nuberOfsit = selectSitNumbers.innerText;
+// const numberOfTotalSit = parseInt(nuberOfsit);
+// if (numberOfTotalSit === 4) {
+// 	document.getElementById('myButton').disabled = false;
+// } else {
+// 	// document.getElementById('myButton').disabled = true;
+// }
+
 function toShowBuyTicket() {
 	const pParibahan = document.getElementById('p-paribahan');
 	pParibahan.classList.remove('hidden');
